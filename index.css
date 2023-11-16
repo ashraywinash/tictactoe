@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    text-align: center;
+}
+
+.winner-mess{
+    color: white;
+}
+
+.sec-1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 3px;
+    border-radius: 20px;
+
+    width: 50vb;
+    height: 50vb;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1vh;
+    animation: locker 10s infinite;
+    
+}
+
+@keyframes locker {
+    from{
+        gap:1vh;
+    }
+    50%{
+        gap:2vh;
+    }
+    to{
+        gap:1vh;
+    }
+}
+
+@keyframes float {
+    from{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+
+.xobtn{
+
+    animation: float 5s infinite;
+    border: solid;
+    border-width: 2px;
+    border-color: green;
+    width: 30%;
+    height: 30%;
+    border: none;
+    cursor: pointer;
+
+}
+.xobtn:hover{
+    background-color: lightgray;
+}
+
+@keyframes rolloff {
+    from{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+        
+    }   
+    50%{
+        transform: rotate(1turn);
+        transform: translate(100%,100%);
+    } 
+    to{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+    }
+}
+
+@keyframes rolloff1 {
+    from{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+        
+    }   
+    50%{
+        transform: rotate(1turn);
+        transform: translate(0%,100%);
+    } 
+    to{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+    }
+}
+@keyframes rolloff2 {
+    from{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+        
+    }   
+    50%{
+        transform: rotate(1turn);
+        transform: translate(-100%,100%);
+    } 
+    to{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+    }
+}
+@keyframes rolloff3 {
+    from{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+        
+    }   
+    50%{
+        transform: rotate(1turn);
+        transform: translate(100%,0%);
+    } 
+    to{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+    }
+}
+@keyframes rolloff4 {
+    from{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+        
+    }   
+    50%{
+        transform: rotate(1turn);
+        transform: translate(0%,0%);
+    } 
+    to{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+    }
+}
+@keyframes rolloff5 {
+    from{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+        
+    }   
+    50%{
+        transform: rotate(1turn);
+        transform: translate(-100%,0%);
+    } 
+    to{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+    }
+}
+@keyframes rolloff6 {
+    from{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+        
+    }   
+    50%{
+        transform: rotate(1turn);
+        transform: translate(100%,-100%);
+    } 
+    to{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+    }
+}
+@keyframes rolloff7 {
+    from{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+        
+    }   
+    50%{
+        transform: rotate(1turn);
+        transform: translate(0%,-100%);
+    } 
+    to{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+    }
+}
+
+@keyframes rolloff8 {
+    from{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+        
+    }   
+    50%{
+        transform: rotate(1turn);
+        transform: translate(-100%,-100%);
+    } 
+    to{
+        transform: rotate(0);
+        transform: translate(0%,0%);
+    }
+}
+
+
+
+
+.a1{
+    animation: rolloff 4s 1;
+}
+.a2{
+    animation: rolloff1 4s 1;
+}
+.a3{
+    animation: rolloff2 4s 1;
+}
+.a4{
+    animation: rolloff3 4s 1;
+}
+.a5{
+    animation: rolloff4 4s 1;
+}
+.a6{
+    animation: rolloff5 4s 1;
+}
+.a7{
+    animation: rolloff6 4s 1;
+}
+.a8{
+    animation: rolloff7 4s 1;
+}
+.a9{
+    animation: rolloff8 4s 1;
+}
